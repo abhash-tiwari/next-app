@@ -5,7 +5,7 @@ const CategoryList = ({categoryList}) => {
   return (
     <div className='mt-5'>
         <h2 className='text-green-600 font-bold text-2xl flex align-middle justify-center'>Shop By Category</h2>
-        <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 gap-5 mt-3'>
+        <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-5 mt-3'>
 
         {categoryList.map((category,idx)=> (
             <div className="flex flex-col items-center bg-green-50 gap-2 p-3 rounded-lg group cursor-pointer hover:bg-green-500">

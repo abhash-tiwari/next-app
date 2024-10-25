@@ -15,6 +15,13 @@ const getCategoryList = () => axiosClient.get('/items?populate=*').then(res=>{
     console.log(res.data.data)
     return res.data.data
 })
+
+const getAllProducts = () => axiosClient.get('/products?populate=*').then(res=>{
+    console.log(res.data.data)
+    return res.data.data
+})
+
+
 export default{
-    getCategory,getSliders,getCategoryList
+    getCategory,getSliders,getCategoryList,getAllProducts
 }
