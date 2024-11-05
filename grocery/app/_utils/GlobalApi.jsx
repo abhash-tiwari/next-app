@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 
 const axiosClient=axios.create({
-    baseURL: 'http://192.168.29.118:1337/api' //ipv4 address replaced localhost  192.168.29.118 but localhost will also work
+    baseURL: 'http://localhost:1337/api' //ipv4 address replaced localhost  192.168.29.118 but localhost will also work
 })
 
 const getCategory = () => axiosClient.get('/items?populate=*');

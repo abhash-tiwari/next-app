@@ -23,7 +23,7 @@ const Header = () => {
 
     const getCategoryList = () => {
         GlobalApi.getCategory().then((res) => {
-            setCategoryList(res.data.data); // Assuming the data field has the categories
+            setCategoryList(res.data.data);
             console.log(res.data.data);
         }).catch((error) => {
             console.error("Error fetching categories", error);
